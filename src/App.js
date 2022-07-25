@@ -10,6 +10,7 @@ import React from 'react'
 import InternetView from "./pages/internetpage";
 import PhoneView from "./pages/phonepage";
 import TvView from "./pages/tvpage";
+import AppoinmentView from "./pages/appointments";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/internet" element={<InternetView/>}/>
       <Route path="/phone" element={<PhoneView/>}/>
       <Route path="/tv" element={<TvView/>}/>
+      <Route path="/app" element={<AppoinmentView/>}/>
 
     </Routes>
   </BrowserRouter>
