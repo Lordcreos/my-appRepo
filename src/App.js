@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+// import your route components too
+
+import React from 'react'
+import InternetView from "./pages/internetpage";
+import PhoneView from "./pages/phonepage";
+import TvView from "./pages/tvpage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div>
+      <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<div> soy app</div>}>
+        
+      </Route>
+
+      <Route path="/internet" element={<InternetView/>}/>
+      <Route path="/phone" element={<PhoneView/>}/>
+      <Route path="/tv" element={<TvView/>}/>
+
+    </Routes>
+  </BrowserRouter>
+  </div>
+  )
 }
 
-export default App;
+export default App
