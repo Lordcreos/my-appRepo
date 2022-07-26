@@ -17,8 +17,8 @@ function InternetView() {
             <div className='text-alternative rounded-full   text-[48px] absolute bottom-0 right-0 -mb-3.5 '> .</div>
           </div>
         </div>
-        <div className=' sm:flex sm:justify-center sm:mt-6'>
-          <section className='flex p-4 sm:bg-white sm:rounded-l-md '>
+        <div className=' sm:flex   sm:justify-start sm:mt-6 sm:w-[65%] sm:mx-auto'>
+          <section className='flex p-4 sm:bg-white sm:rounded-l-md sm:p-11 '>
             <RouterIcon />
             <div className='flex-col p-5'>
               <div className='text-tiny text-[#707070]'>Service Status</div>
@@ -27,8 +27,8 @@ function InternetView() {
                 Active</div>
             </div>
           </section>
-          <section className='flex p-4 space-x-4 sm:p-0 sm:space-x-4'>
-            <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-4 '  >
+          <section className='flex p-4 space-x-4 sm:p-0 sm:justify-between sm:w-full'>
+            <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-11 '  >
               <div className='text-tiny text-[#707070]'>Internet Plan</div>
               <div className='inline-block px-1 mt-1 font-bold text-white rounded-sm bg-primary text-tiny'>
                 Internet Service
@@ -36,13 +36,13 @@ function InternetView() {
               <div className='font-medium text-black text-tiny '>Includes 40mb/s</div>
             </div>
             <hr />
-            <div className='flex-1 sm:bg-white sm:rounded-md sm:p-4' >
+            <div className='flex-1 sm:bg-white sm:rounded-md sm:p-11 ' >
               <div className='text-tiny text-[#707070]'>Equipment Information</div>
               <div className='font-medium text-black text-tiny'>Digital Max Pro/100 mbps </div>
             </div>
           </section>
         </div>
-        <section className='flex px-4 py-1 place-content-between sm:mx-auto sm:w-[50%] sm:mt-10'>
+        <section className='flex px-4 py-1 place-content-between sm:mx-auto sm:w-[65%] sm:mt-10'>
           <div className='text-xl font-bold text-primary' >
             Additional services
           </div>
@@ -51,7 +51,7 @@ function InternetView() {
             + Add more services
           </div>
         </section>
-        <div className='p-4 text-center sm:mx-auto sm:w-[50%] sm:text-left text-tiny'> You have the following services included with your plan</div>
+        <div className='p-4 text-center sm:mx-auto sm:w-[65%] sm:text-left text-tiny'> You have the following services included with your plan</div>
         <section className='p-4 sm:mx-auto sm:w-[65%] sm:flex sm:space-x-4 '>
           <div className='my-2 bg-white rounded-md shadow-xl sm:w-2/4 '>
             <div className='flex p-5 place-content-between'>
@@ -62,6 +62,10 @@ function InternetView() {
               <div> <IoTrashOutline className='text-primary' /></div>
             </div>
           </div>
+
+
+
+          
           <div className='my-2 bg-white rounded-md shadow-xl sm:w-2/4'>
             <div className='flex p-5 place-content-between'>
               <div>
@@ -80,17 +84,17 @@ function InternetView() {
           </section>
           <section className='bg-gradient-to-b from-[#00E5D9] to-[#333366] rounded-lg shadow-lg p-0 m-3 block sm:flex relative'>
             <div class="sm:w-4/5 py-10">
-              <div className='block lg:flex items-center justify-center h-full'>
-                <div className="lg:w-1/2 text-2xl xl:ml-20 ml-5">
-                  <div className='text-white font-bold'>Full Power Experience</div>
+              <div className='items-center justify-center block h-full lg:flex'>
+                <div className="ml-5 text-2xl lg:w-1/2 xl:ml-20">
+                  <div className='font-bold text-white'>Full Power Experience</div>
                   <div className='text-white'>Enjoy 2G Internet</div>
                 </div>
-                <div className="lg:w-1/2 mt-5 lg:mt-0 ml-5 lg:ml-0 lg:text-center">
-                  <button className='w-44 py-2 text-center text-black rounded-md bg-alternative'> Upgrade plan</button>
+                <div className="mt-5 ml-5 lg:w-1/2 lg:mt-0 lg:ml-0 lg:text-center">
+                  <button className='py-2 text-center text-black rounded-md w-44 bg-alternative'> Upgrade plan</button>
                 </div> 
               </div>
             </div>
-            <div className="sm:w-1/5 sm:bg-orange-500 sm:text-center sm:text-white sm:font-bold text-xs lg:text-2xl sm:p-8 sm:rounded-tr-lg sm:rounded-br-lg sm:block hidden">
+            <div className="hidden text-xs sm:w-1/5 sm:bg-orange-500 sm:text-center sm:text-white sm:font-bold lg:text-2xl sm:p-8 sm:rounded-tr-lg sm:rounded-br-lg sm:block">
               <div className='flex items-center justify-center h-full'>
                 <div className='block'>
                   <div>20%</div>
