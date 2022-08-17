@@ -20,7 +20,7 @@ function TvView() {
           <TvIcon />
           <div className='flex-col p-5'>
             <div className='text-tiny text-[#707070]'>Service Status</div>
-            <div className='bg-active text-activeText text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]'>
+            <div className='bg-active text-o text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]'>
               <GoPrimitiveDot className='pr-1 my-auto' />
               Active</div>
           </div>

@@ -4,6 +4,9 @@ import { IoCalendarSharp, IoConstruct } from "react-icons/io5";
 import { BsTruck, BsFillCheckCircleFill } from "react-icons/bs";
 import "./StyleGeneral.css";
 import { list } from "postcss";
+import {useParams} from 'react-router-dom';
+
+
 
 const data = {
     number: '#23456',
@@ -19,7 +22,7 @@ const data = {
       {
         name: "On way",
         icon: <BsTruck />,
-        active:true
+        active:false
       },
       {
         name: "Started",
@@ -35,6 +38,9 @@ const data = {
 };
 
 function AppoinmentView() {
+  const {id} = useParams();
+  data.list_appointment[id].active = true
+  console.log ( data.list_appointment[id].active)
   return (
     <div className="App bg-slate-100" >
       <>
@@ -97,7 +103,7 @@ function AppoinmentView() {
             <div className="mt-5">
               {
               
-              data.list_appointment[0].active === false ? (<div></div>):(<div><button className="w-full py-2 text-center text-white border rounded-md border-alternative bg-primary">
+              data.list_appointment[0].active === false ? (<div></div>):(<div><button className="w-full py-2 text-center text-white border rounded-md border-alternative bg-primary" onClick={() => { window.location.href = 'http://localhost:3008/schedule';}}>
               Reshedule appointment
             </button></div>)
               }

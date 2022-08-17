@@ -1,12 +1,31 @@
 
 import RouterIcon from '../assets/RouterIcon';
-// import Header from '../components/header';
+import { useState } from 'react';
 import { GoPrimitiveDot } from "react-icons/go";
 import { IoTrashOutline } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
 import { FaWifi } from "react-icons/fa";
 
+const statusStyle =[
+  {status: 'Active',
+    color : 'text-activeText',
+    bg: 'bg-active' },
+  {status: 'Pending',
+      color : 'text-orange-500', 
+      bg: 'bg-orange-100'},
+  {status: 'Suspended',
+        color : 'text-red-500', 
+        bg: 'bg-red-100'},
+       
+]
+
+
+
+
 function InternetView() {
+
+  const [stateNum, setStateNum] = useState(0);
+  console.log(stateNum)
   return (
     <div className="App bg-slate-100" >
       <>
@@ -18,15 +37,24 @@ function InternetView() {
           </div>
         </div>
         <div className=' sm:flex   sm:justify-start sm:mt-6 sm:w-[65%] sm:mx-auto'>
-          <section className='flex p-4 sm:bg-white sm:rounded-l-md sm:p-11 '>
+          <section className='p-4 sm:bg-white sm:rounded-l-md sm:p-11'>
+            <div className='flex'>
             <RouterIcon />
             <div className='flex-col p-5'>
               <div className='text-tiny text-[#707070]'>Service Status</div>
-              <div className='bg-active text-activeText text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]'>
+              <div className= { `${statusStyle[stateNum].color} ${statusStyle[stateNum].bg} text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]`} onClick={() => { stateNum >= 2 ? (setStateNum(0)):(setStateNum(stateNum +1)) }}> 
                 <GoPrimitiveDot className='pr-1 my-auto' />
-                Active</div>
+                {statusStyle[stateNum].status}</div>
             </div>
+            </div>
+            {stateNum == 1 && <div>
+            <div className='my-auto text-tiny '> <span className='text-gray-400'>Order Date </span>  <span className='text-black'>June 15th, 2022 </span></div>
+            <div className='my-auto text-tiny '> <span className='text-gray-400'>Scheduled date: </span>  <span className='text-black'>June 20th, 2022  </span></div>
+            <div className='my-auto underline text-primary text-tiny ' onClick={() => { window.location.href = 'http://localhost:3008/app';}}> Track your appointment</div>
+            </div>
+            }
           </section>
+          
           <section className='flex p-4 space-x-4 sm:p-0 sm:justify-between sm:w-full'>
             <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-11 '  >
               <div className='text-tiny text-[#707070]'>Internet Plan</div>

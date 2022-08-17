@@ -7,7 +7,7 @@ function AppoinmentView() {
     <div className="App bg-slate-100" >
       <>
         <div className="flex h-16 p-4 text-2xl font-bold align-middle bg-white text-primary place-content-between"> 
-          <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4'/> Service Installation</div>  
+          <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4' onClick={()=>{window.location.href = 'http://localhost:3008/app';}}/> Service Installation</div>  
         </div>
         <section className='p-4'>
           <div className='p-5 bg-white rounded-md shadow-xl'>

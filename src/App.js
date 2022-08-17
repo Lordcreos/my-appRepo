@@ -12,6 +12,8 @@ import TvView from "./pages/tvpage";
 import AppoinmentView from "./pages/appointments";
 import AppointmentsDetailsView from "./pages/appointmentsDetails";
 import ScheduleView from "./pages/schedule";
+import LocationView from "./pages/location";
+import ShoppingCart from "./pages/ShoppingCart";
 
 function App() {
   return (
@@ -26,8 +28,10 @@ function App() {
       <Route path="/phone" element={<PhoneView/>}/>
       <Route path="/tv" element={<TvView/>}/>
       <Route path="/app" element={<AppoinmentView/>}/>
-      <Route path="/appo" element={<AppointmentsDetailsView/>}/>
+      <Route path="/appo/:id" element={<AppointmentsDetailsView/>}/>
       <Route path="/schedule" element={<ScheduleView/>}/>
+      <Route path="/location" element={<LocationView/>}/>
+      <Route path="/shop" element={<ShoppingCart/>}/>
     </Routes>
   </BrowserRouter>
   </div>
