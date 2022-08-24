@@ -14,6 +14,11 @@ import AppointmentsDetailsView from "./pages/appointmentsDetails";
 import ScheduleView from "./pages/schedule";
 import LocationView from "./pages/location";
 import ShoppingCart from "./pages/ShoppingCart";
+import EmailVerification from "./pages/emailVerification";
+import PhoneVerification from "./pages/phoneVerification";
+import EmailConfirmation from "./pages/emailConfirmation";
+import RefPhone from "./pages/RefPhone";
+
 
 function App() {
   return (
@@ -26,12 +31,16 @@ function App() {
 
       <Route path="/internet" element={<InternetView/>}/>
       <Route path="/phone" element={<PhoneView/>}/>
+      <Route path="/refphone" element={<RefPhone/>}/>
       <Route path="/tv" element={<TvView/>}/>
       <Route path="/app" element={<AppoinmentView/>}/>
       <Route path="/appo/:id" element={<AppointmentsDetailsView/>}/>
       <Route path="/schedule" element={<ScheduleView/>}/>
       <Route path="/location" element={<LocationView/>}/>
       <Route path="/shop" element={<ShoppingCart/>}/>
+      <Route path="/email" element={<EmailVerification/>}/>
+      <Route path="/confirmemail" element={<EmailConfirmation/>}/>
+      <Route path="/verifyphone" element={<PhoneVerification/>}/>
     </Routes>
   </BrowserRouter>
   </div>

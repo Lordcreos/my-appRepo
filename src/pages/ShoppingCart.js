@@ -1,23 +1,33 @@
 import React from 'react'
+import { useState } from "react";
 import { FaWifi } from "react-icons/fa";
 import { BsTelephone} from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
 import { TbArrowsSort } from "react-icons/tb";
 import {MdOutlineRouter } from "react-icons/md";
+import Sidebar from './sidebar';
 
 function ShoppingCart() {
 
-
+  const [showOffers, setShowOffers] = useState(false);
+  const [showAll, setShowAll] = useState(false);
+  const [showInternet, setShowInternet] = useState(false);
+  const [showPhone, setShowPhone] = useState(false);
+  const [showTV, setShowTV] = useState(false);
 
   return (
     <>
+          
+      <Sidebar />
+
+
    
     <div className="flex py-10 sm:h-screen sm:place-content-center">
     <div className='p-4 my-auto space-y-4 divide-y sm:w-3/4 sm:bg-white sm:shadow-2xl sm:rounded-xl divide-slate-200'>
       
    
       
-      {/* <div className="border-4 radial-progress text-alternative " style={{ "--value": 60 }}  >70%</div> */}
+      
       <section>
     <div className='flex place-content-between'>
         <div className='flex space-x-2'>
@@ -32,7 +42,7 @@ function ShoppingCart() {
             </div>
     </div>
 
-    <div className='content-center px-4 py-2 font-semibold rounded-full bg-alternative text-primary'> Offers</div>
+    <div className='content-center px-4 py-2 font-semibold rounded-full bg-alternative text-primary'  onClick={()=>{setShowOffers(!showOffers)}}> Offers</div>
 
    </div>
           
@@ -53,6 +63,13 @@ function ShoppingCart() {
           </div>
         </section>
 
+        { showOffers &&
+          <section className='flex justify-center pt-3 space-x-4'>
+        <div className='content-center px-4 py-2 font-semibold rounded-full bg-[#bdf6f3] text-primary'onClick={()=>{setShowAll(!showAll)}} > {showAll &&<span>✓</span>} All</div>
+        <div className='content-center px-4 py-2 font-semibold rounded-full bg-[#bdf6f3] text-primary' onClick={()=>{setShowInternet(!showInternet)}}>  {showInternet &&<span>✓</span>}Internet</div>
+        <div className='content-center px-4 py-2 font-semibold rounded-full bg-[#bdf6f3] text-primary' onClick={()=>{setShowPhone(!showPhone)}}>  {showPhone &&<span>✓</span>} Phone</div>
+        <div className='content-center px-4 py-2 font-semibold rounded-full bg-[#bdf6f3] text-primary' onClick={()=>{setShowTV(!showTV)}}>{showTV &&<span>✓</span>} Tv</div>
+        </section>}
 
 
      <section className='space-y-4 sm:flex sm:space-x-4 sm:py-4'>
@@ -152,6 +169,7 @@ function ShoppingCart() {
   
       </div>
     </div>
+
 
   </>
   )

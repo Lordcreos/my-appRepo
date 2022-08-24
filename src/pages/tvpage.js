@@ -19,7 +19,7 @@ function TvView() {
         <section className='flex p-4 sm:bg-white sm:rounded-l-md sm:p-12 '>
           <TvIcon />
           <div className='flex-col p-5'>
-            <div className='text-tiny text-[#707070]'>Service Status</div>
+            <div className='text-tiny text-gray-500'>Service Status</div>
             <div className='bg-active text-o text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]'>
               <GoPrimitiveDot className='pr-1 my-auto' />
               Active</div>
@@ -27,7 +27,7 @@ function TvView() {
         </section>
         <section className='flex p-4 space-x-4 sm:p-0 sm:justify-between sm:w-full'>
           <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-12 '  >
-            <div className='text-tiny text-[#707070]'>TV Plan</div>
+            <div className='text-tiny text-gray-500'>TV Plan</div>
             <div className='inline-block px-1 mt-1 font-bold text-white rounded-sm bg-primary text-tiny'>
             HDTV Premium Plus
             </div>
@@ -35,7 +35,7 @@ function TvView() {
           </div>
           <hr />
           <div className='flex-1 sm:bg-white sm:rounded-md sm:p-12 ' >
-            <div className='text-tiny text-[#707070] sm:my-auto '>Equipment Information</div>
+            <div className='text-tiny text-gray-500 sm:my-auto '>Equipment Information</div>
             <div className='font-medium text-black text-tiny sm:my-auto '>Digital Max Pro/100 mbps</div>
           </div>
         </section>

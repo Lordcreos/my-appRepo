@@ -149,7 +149,7 @@ function AppoinmentView() {
 
 
 
-        <div className='m-3 text-sm text-[#707070]'> If you are having any problem, please call our contact center 1800 345 355.</div>
+        <div className='m-3 text-sm text-gray-500'> If you are having any problem, please call our contact center 1800 345 355.</div>
       </section>
 
       

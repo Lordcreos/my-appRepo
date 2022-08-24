@@ -41,7 +41,7 @@ function InternetView() {
             <div className='flex'>
             <RouterIcon />
             <div className='flex-col p-5'>
-              <div className='text-tiny text-[#707070]'>Service Status</div>
+              <div className='text-tiny text-gray-500'>Service Status</div>
               <div className= { `${statusStyle[stateNum].color} ${statusStyle[stateNum].bg} text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]`} onClick={() => { stateNum >= 2 ? (setStateNum(0)):(setStateNum(stateNum +1)) }}> 
                 <GoPrimitiveDot className='pr-1 my-auto' />
                 {statusStyle[stateNum].status}</div>
@@ -57,7 +57,7 @@ function InternetView() {
           
           <section className='flex p-4 space-x-4 sm:p-0 sm:justify-between sm:w-full'>
             <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-11 '  >
-              <div className='text-tiny text-[#707070]'>Internet Plan</div>
+              <div className='text-tiny text-gray-500'>Internet Plan</div>
               <div className='inline-block px-1 mt-1 font-bold text-white rounded-sm bg-primary text-tiny'>
                 Internet Service
               </div>
@@ -65,7 +65,7 @@ function InternetView() {
             </div>
             <hr />
             <div className='flex-1 sm:bg-white sm:rounded-md sm:p-11 ' >
-              <div className='text-tiny text-[#707070]'>Equipment Information</div>
+              <div className='text-tiny text-gray-500'>Equipment Information</div>
               <div className='font-medium text-black text-tiny'>Digital Max Pro/100 mbps </div>
             </div>
           </section>
@@ -84,7 +84,7 @@ function InternetView() {
           <div className='my-2 bg-white rounded-md shadow-xl sm:w-2/4 '>
             <div className='flex p-5 place-content-between'>
               <div>
-                <div><span className='text-xl font-bold text-primary '> Basic</span> <span className='text-[#707070] text-xl font-bold '> 40mb/s</span></div>
+                <div><span className='text-xl font-bold text-primary '> Basic</span> <span className='text-gray-500 text-xl font-bold '> 40mb/s</span></div>
                 <div className='text-tiny'> Virus protection and more</div>
               </div>
               <div> <IoTrashOutline className='text-primary' /></div>
@@ -97,7 +97,7 @@ function InternetView() {
           <div className='my-2 bg-white rounded-md shadow-xl sm:w-2/4'>
             <div className='flex p-5 place-content-between'>
               <div>
-                <div><span className='text-xl font-bold text-primary '> Basic</span> <span className='text-[#707070] text-xl font-bold '> 40mb/s</span></div>
+                <div><span className='text-xl font-bold text-primary '> Basic</span> <span className='text-gray-500 text-xl font-bold '> 40mb/s</span></div>
                 <div className='text-tiny'> Virus protection and more</div>
               </div>
               <div> <IoTrashOutline className='text-primary' /></div>

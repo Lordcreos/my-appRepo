@@ -37,7 +37,7 @@ function PhoneView() {
             <div className='flex'>
             <PhoneIcon />
             <div className='flex-col p-5'>
-              <div className='text-tiny text-[#707070]'>Service Status</div>
+              <div className='text-tiny text-gray-500'>Service Status</div>
               <div className= { `${statusStyle[stateNum].color} ${statusStyle[stateNum].bg} text-center rounded-sm  text-tiny mt-1 place-content-center flex w-[117px]`} onClick={() => { stateNum >= 2 ? (setStateNum(0)):(setStateNum(stateNum +1)) }}> 
                 <GoPrimitiveDot className='pr-1 my-auto' />
                 {statusStyle[stateNum].status}</div>
@@ -52,7 +52,7 @@ function PhoneView() {
           </section>
         <section className='flex p-4 space-x-4 sm:p-0 sm:justify-between sm:w-full'>
           <div className='flex-1 sm:bg-white sm:rounded-r-md sm:p-12 '  >
-            <div className='text-tiny text-[#707070]'>Phone Plan</div>
+            <div className='text-tiny text-gray-500'>Phone Plan</div>
             <div className='inline-block px-1 mt-1 font-bold text-white rounded-sm bg-primary text-tiny'>
               Basic
             </div>
@@ -61,7 +61,7 @@ function PhoneView() {
           <hr />
           <div className='flex-1 sm:bg-white sm:rounded-md sm:p-12 ' >
             <div className="bg-red">
-            <div className='text-tiny text-[#707070] sm:my-auto'>Phone number</div>
+            <div className='text-tiny text-gray-500 sm:my-auto'>Phone number</div>
             <div className='font-medium text-black text-tiny sm:my-auto '>+1 134 2455 567</div>
             </div>
            
@@ -82,7 +82,7 @@ function PhoneView() {
         <div className='my-2 bg-white rounded-md shadow-xl sm:w-2/4 '>
           <div className='flex p-5 place-content-between'>
             <div>
-              <div><span className='text-xl font-bold text-primary '> Voice Ultra</span> <span className='text-[#707070] text-xl font-bold '> 40mb/s</span></div>
+              <div><span className='text-xl font-bold text-primary '> Voice Ultra</span> <span className='text-gray-500 text-xl font-bold '> 40mb/s</span></div>
               <div className='text-tiny'> 1 month free 1 year contract</div>
             </div>
             <div> <IoTrashOutline className='text-primary' /></div>

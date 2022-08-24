@@ -16,16 +16,16 @@ function location() {
         Where do you want your services?
         </div>
         <div className="text-center in-lineblock">
-            <div className='text-sm text-[#707070]'>Check the service availability and begin enjoying all the benefits we have to offer!</div>
+            <div className='text-sm text-gray-500'>Check the service availability and begin enjoying all the benefits we have to offer!</div>
         </div>
 
 
     </section>
 
     
-    <section className='flex py-6 space-x-3'>
+    <section className='sm:flex py-6 sm:space-x-3'>
 
-    <div className='w-8/12'>
+    <div className=' w-12/12 sm:w-10/12'>
             <span className='mb-1 text-sm font-semibold text-primary'>Addres</span>
      <div className='flex py-2 border rounded-md relaative border-primary text-primary'>
      <input
@@ -36,7 +36,8 @@ function location() {
     
      </div>
     </div>
-    <div className='w-3/12 sm:w-4/12'>
+    <div className='flex space-x-3 justify-start'>
+    <div className='w-6/12 sm:w-6/12'>
             <span className='mb-1 text-sm font-semibold text-primary'>Apt., Suite</span>
             
       <input
@@ -44,6 +45,16 @@ function location() {
         placeholder='123'
       />
       
+    </div>
+    <div className='w-6/12 sm:w-6/12'>
+            <span className='mb-1 text-sm font-semibold text-primary'>Zip Code</span>
+            
+      <input
+        className="w-full px-1 py-2 text-sm border rounded-md border-primary text-primary focus:outline-none"
+        placeholder='123'
+      />
+      
+    </div>
     </div>
     </section>
 
