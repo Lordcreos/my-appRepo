@@ -4,6 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { BsTelephone} from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
 import { useState } from 'react';
+import { IconName } from "react-icons/md";
 
 const statusStyle =[
   {status: 'Active',

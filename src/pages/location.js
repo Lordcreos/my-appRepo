@@ -1,6 +1,5 @@
 import React from 'react'
 
-import {  IoLocationOutline } from "react-icons/io5";
 
 function location() {
   return (
@@ -9,7 +8,7 @@ function location() {
     <div className='p-4 my-auto sm:w-3/4 sm:bg-white sm:shadow-2xl sm:rounded-xl'>
     <section className="flex flex-col items-center justify-center sm">
       <div className="flex items-center justify-center w-32 h-32 bg-purple-300 rounded-full bg-opacity-20">
-        <IoLocationOutline className='w-20 h-20 text-purple-500'  />
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-20 h-20 text-purple-500" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path><circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle></svg>
       </div>
 
         <div className='py-6 m-2 text-lg font-bold text-primary'>
@@ -32,7 +31,7 @@ function location() {
         className="w-full px-1 text-sm focus:outline-none"
         placeholder='123 Place St., Orlando FL'
       />
-      <IoLocationOutline className='w-6 h-6 text-primary'  />
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-6 h-6 text-primary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 48c-79.5 0-144 61.39-144 137 0 87 96 224.87 131.25 272.49a15.77 15.77 0 0025.5 0C304 409.89 400 272.07 400 185c0-75.61-64.5-137-144-137z"></path><circle cx="256" cy="192" r="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"></circle></svg>
     
      </div>
     </div>

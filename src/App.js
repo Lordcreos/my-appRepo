@@ -18,6 +18,9 @@ import EmailVerification from "./pages/emailVerification";
 import PhoneVerification from "./pages/phoneVerification";
 import EmailConfirmation from "./pages/emailConfirmation";
 import RefPhone from "./pages/RefPhone";
+import RefTv from "./pages/refTV";
+import RefInternet from "./pages/refInternet";
+import LocationCheck from "./pages/locationCheck";
 
 
 function App() {
@@ -32,11 +35,14 @@ function App() {
       <Route path="/internet" element={<InternetView/>}/>
       <Route path="/phone" element={<PhoneView/>}/>
       <Route path="/refphone" element={<RefPhone/>}/>
+      <Route path="/reftv" element={<RefTv/>}/>
+      <Route path="/refinternet" element={<RefInternet/>}/>
       <Route path="/tv" element={<TvView/>}/>
       <Route path="/app" element={<AppoinmentView/>}/>
       <Route path="/appo/:id" element={<AppointmentsDetailsView/>}/>
       <Route path="/schedule" element={<ScheduleView/>}/>
       <Route path="/location" element={<LocationView/>}/>
+      <Route path="/check" element={<LocationCheck/>}/>
       <Route path="/shop" element={<ShoppingCart/>}/>
       <Route path="/email" element={<EmailVerification/>}/>
       <Route path="/confirmemail" element={<EmailConfirmation/>}/>

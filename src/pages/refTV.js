@@ -5,20 +5,20 @@ import { BiHash} from "react-icons/bi";
 import { CgScreen } from "react-icons/cg";
 import { BsTelephone} from "react-icons/bs";
 import { useState } from 'react';
-import { MdPhonelinkRing } from "react-icons/md";
+import { MdFiberDvr } from "react-icons/md";
 
 
 
-function RefPhone() {
+function Reftv() {
   const [stateNum, setStateNum] = useState(0);
 
   return (
     <div className="App bg-slate-100" >
     <>
     <div className="flex h-16 p-4 text-2xl font-bold align-middle bg-white text-primary place-content-between">
-        <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4' onClick={() => { console.log('hola') }} /> Phone </div>
+        <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4' onClick={() => { console.log('hola') }} /> TV </div>
         <div className='relative flex my-auto align-middle rounded-full h-9 w-9 place-content-center bg-primary'>
-          < BsTelephone className='my-auto text-white align-middle ' />
+          < CgScreen className='my-auto text-white align-middle ' />
           <div className='text-alternative rounded-full   text-[48px] absolute bottom-0 right-0 -mb-3.5 '> .</div>
         </div>
       </div>
@@ -33,7 +33,7 @@ function RefPhone() {
             <div className='rounded-md  w-full '>
                 <div className='sm:flex p-5 place-content-between h-full space-y-6 sm:space-y-0'>
                     <div className=" sm:flex sm:flex-col sm:justify-between ">
-                    <div className='text-2xl font-bold text-white '  > Digital Phone Plus (Europe)</div>
+                    <div className='text-2xl  text-white '  > <span className="font-bold"> HDTV Premium Plan </span>  <span className="text-white px-6 ">  Quality  <span className="text-gray-500">|</span><span className="text-alternative px-2"> 4</span></span></div>
                     <div className='text-base text-alternative underline'> More Information</div>
                     </div>
                     <div className="sm:flex sm:flex-col justify-between">
@@ -48,40 +48,6 @@ function RefPhone() {
             </section>
 
             <section className=' bg-[#E6F9F8] rounded-b-lg shadow-2xl sm:flex sm:space-y-4  p-5 flex-col divide-y-2 divide-gray-300  '>
-                
-              <div>
-                <div className="flex justify-between sm:p-4 py-4 ">
-                    <div className=' flex space-x-4 content-center'>
-                          <div className='sm:text-xl font-bold text-primary ' > Phone number (2) </div>
-                          <button className='bg-alternative text-primary text-tiny sm:text-base sm:px-4 px-2 rounded-full' > + Add  </button>
-                    </div>
-                    <div className="flex"><IoIosArrowUp className="text-bold text-2xl my-auto "/> </div>
-                </div>
-
-                <section className=' sm:grid sm:grid-cols-2 gap-4 py-4'>
-                      <div className='my-2 bg-white rounded-md shadow-xl '>
-                              <div className='flex p-5 place-content-between'>
-                                  <div className="flex space-x-4">
-                                    <BiHash className="text-primary" size="40px"/>
-                                    <span className="text-xl font-semibold text-primary my-auto">(789) 123 45 67</span>
-                                  </div>               
-                                  <div className="flex"> <IoTrashOutline className='text-gray-300 my-auto' size="30px"/></div>
-                              </div>
-                          </div>
-                      <div className='my-2 bg-white rounded-md shadow-xl '>
-                              <div className='flex p-5 place-content-between'>
-                                  <div className="flex space-x-4">
-                                    <BiHash className="text-primary" size="40px"/>
-                                    <span className="text-xl font-semibold text-primary my-auto">(789) 123 45 67</span>
-                                  </div>               
-                                  <div className="flex"> <IoTrashOutline className='text-gray-300 my-auto' size="30px"/></div>
-                              </div>
-                  </div>
-
-
-                  </section>
-
-              </div>
 
               <div>
                 <div className="flex justify-between sm:p-4 py-4" >
@@ -96,9 +62,9 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <MdPhonelinkRing className="text-primary" size="40px"/>
+                                    <MdFiberDvr className="text-primary" size="40px"/>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Cordless Phone</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">DVR</span>
                                       <span className="text-xl  text-gray-300 my-auto">S/N 651651681</span>
                                     </div>
                                   </div>               
@@ -108,9 +74,9 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <MdPhonelinkRing className="text-primary" size="40px"/>
+                                    <MdFiberDvr className="text-primary" size="40px"/>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Cordless Phone</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">DVR</span>
                                       <span className="text-xl  text-gray-300 my-auto">S/N 651651681</span>
                                     </div>
                                   </div>               
@@ -136,11 +102,13 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BsTelephone className="text-primary" size="40px"/>
+                                    <div className="rounded-full bg-gradient-to-b  from-[#333366] to-[#00E5D9] w-14 h-14">
+                                        <img src="https://thumbs.dreamstime.com/b/hbo-logo-editorial-ilustrativo-sobre-fondo-blanco-icono-vectorial-logotipos-iconos-conjunto-redes-sociales-banner-plano-vectores-210442739.jpg" className="p-1 rounded-full" />
+                                        </div>
                                     <div>
                                       <div className="flex flex-col">
-                                        <span className="text-xl font-semibold text-primary my-auto">Distinctive Ring</span>
-                                        <span className="text-xl  text-gray-300 my-auto">A unique tone for this phone</span>
+                                        <span className="text-xl font-semibold text-primary my-auto">HBO</span>
+                                        <span className="text-xl  text-gray-300 my-auto">50 Channels</span>
                                       </div>
                                     </div>
                                   </div>               
@@ -150,10 +118,12 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BsTelephone className="text-primary" size="40px"/>
+                                    <div className="rounded-full bg-gradient-to-b  from-[#333366] to-[#00E5D9] w-14 h-14">
+                                        <img src="https://thumbs.dreamstime.com/b/hbo-logo-editorial-ilustrativo-sobre-fondo-blanco-icono-vectorial-logotipos-iconos-conjunto-redes-sociales-banner-plano-vectores-210442739.jpg" className="p-1 rounded-full" />
+                                    </div>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Distinctive Ring</span>
-                                      <span className="text-xl  text-gray-300 my-auto">A unique tone for this phone</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">HBO</span>
+                                      <span className="text-xl  text-gray-300 my-auto">50 Channels</span>
                                     </div>
                                     
                                   </div>               
@@ -205,4 +175,4 @@ function RefPhone() {
   );
 }
 
-export default RefPhone;
+export default Reftv;

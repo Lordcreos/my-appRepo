@@ -1,24 +1,23 @@
 import { GoPrimitiveDot } from "react-icons/go";
 import { IoTrashOutline } from "react-icons/io5";
 import { IoIosArrowBack, IoIosArrowDown,IoIosArrowUp } from "react-icons/io";
-import { BiHash} from "react-icons/bi";
-import { CgScreen } from "react-icons/cg";
-import { BsTelephone} from "react-icons/bs";
+import { BiBroadcast} from "react-icons/bi";
+import { FaWifi } from "react-icons/fa";
 import { useState } from 'react';
-import { MdPhonelinkRing } from "react-icons/md";
+import { MdComputer } from "react-icons/md";
 
 
 
-function RefPhone() {
+function RefInternet() {
   const [stateNum, setStateNum] = useState(0);
 
   return (
     <div className="App bg-slate-100" >
     <>
     <div className="flex h-16 p-4 text-2xl font-bold align-middle bg-white text-primary place-content-between">
-        <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4' onClick={() => { console.log('hola') }} /> Phone </div>
+        <div className='flex my-auto align-middle '><IoIosArrowBack className='m-auto mr-4' onClick={() => { console.log('hola') }} /> Internet </div>
         <div className='relative flex my-auto align-middle rounded-full h-9 w-9 place-content-center bg-primary'>
-          < BsTelephone className='my-auto text-white align-middle ' />
+          < FaWifi className='my-auto text-white align-middle ' />
           <div className='text-alternative rounded-full   text-[48px] absolute bottom-0 right-0 -mb-3.5 '> .</div>
         </div>
       </div>
@@ -33,7 +32,7 @@ function RefPhone() {
             <div className='rounded-md  w-full '>
                 <div className='sm:flex p-5 place-content-between h-full space-y-6 sm:space-y-0'>
                     <div className=" sm:flex sm:flex-col sm:justify-between ">
-                    <div className='text-2xl font-bold text-white '  > Digital Phone Plus (Europe)</div>
+                    <div className='text-2xl font-bold text-white '  > Internet Premium Plan</div>
                     <div className='text-base text-alternative underline'> More Information</div>
                     </div>
                     <div className="sm:flex sm:flex-col justify-between">
@@ -52,7 +51,7 @@ function RefPhone() {
               <div>
                 <div className="flex justify-between sm:p-4 py-4 ">
                     <div className=' flex space-x-4 content-center'>
-                          <div className='sm:text-xl font-bold text-primary ' > Phone number (2) </div>
+                          <div className='sm:text-xl font-bold text-primary ' > Ip Address (2) </div>
                           <button className='bg-alternative text-primary text-tiny sm:text-base sm:px-4 px-2 rounded-full' > + Add  </button>
                     </div>
                     <div className="flex"><IoIosArrowUp className="text-bold text-2xl my-auto "/> </div>
@@ -62,8 +61,8 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BiHash className="text-primary" size="40px"/>
-                                    <span className="text-xl font-semibold text-primary my-auto">(789) 123 45 67</span>
+                                    <BiBroadcast className="text-primary" size="40px"/>
+                                    <span className="text-xl font-semibold text-primary my-auto">127.341.572</span>
                                   </div>               
                                   <div className="flex"> <IoTrashOutline className='text-gray-300 my-auto' size="30px"/></div>
                               </div>
@@ -71,8 +70,8 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BiHash className="text-primary" size="40px"/>
-                                    <span className="text-xl font-semibold text-primary my-auto">(789) 123 45 67</span>
+                                    <BiBroadcast className="text-primary" size="40px"/>
+                                    <span className="text-xl font-semibold text-primary my-auto">127.341.572</span>
                                   </div>               
                                   <div className="flex"> <IoTrashOutline className='text-gray-300 my-auto' size="30px"/></div>
                               </div>
@@ -96,9 +95,9 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <MdPhonelinkRing className="text-primary" size="40px"/>
+                                    <MdComputer className="text-primary" size="40px"/>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Cordless Phone</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">Fast Speed</span>
                                       <span className="text-xl  text-gray-300 my-auto">S/N 651651681</span>
                                     </div>
                                   </div>               
@@ -108,9 +107,9 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <MdPhonelinkRing className="text-primary" size="40px"/>
+                                    <MdComputer className="text-primary" size="40px"/>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Cordless Phone</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">Fast Speed</span>
                                       <span className="text-xl  text-gray-300 my-auto">S/N 651651681</span>
                                     </div>
                                   </div>               
@@ -136,10 +135,10 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BsTelephone className="text-primary" size="40px"/>
+                                    <FaWifi className="text-primary" size="40px"/>
                                     <div>
                                       <div className="flex flex-col">
-                                        <span className="text-xl font-semibold text-primary my-auto">Distinctive Ring</span>
+                                        <span className="text-xl font-semibold text-primary my-auto">Mutiple Routers</span>
                                         <span className="text-xl  text-gray-300 my-auto">A unique tone for this phone</span>
                                       </div>
                                     </div>
@@ -150,9 +149,9 @@ function RefPhone() {
                       <div className='my-2 bg-white rounded-md shadow-xl '>
                               <div className='flex p-5 place-content-between'>
                                   <div className="flex space-x-4">
-                                    <BsTelephone className="text-primary" size="40px"/>
+                                    <FaWifi className="text-primary" size="40px"/>
                                     <div className="flex flex-col">
-                                      <span className="text-xl font-semibold text-primary my-auto">Distinctive Ring</span>
+                                      <span className="text-xl font-semibold text-primary my-auto">Mutiple Routers</span>
                                       <span className="text-xl  text-gray-300 my-auto">A unique tone for this phone</span>
                                     </div>
                                     
@@ -205,4 +204,4 @@ function RefPhone() {
   );
 }
 
-export default RefPhone;
+export default RefInternet;
