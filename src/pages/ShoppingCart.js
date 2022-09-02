@@ -1,15 +1,13 @@
-import React from 'react'
-import { useState } from "react";
+import React, { useState } from 'react'
 import { FaWifi } from "react-icons/fa";
-import { BsTelephone} from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
 import { CgScreen } from "react-icons/cg";
 import { TbArrowsSort } from "react-icons/tb";
-import {MdOutlineRouter } from "react-icons/md";
+import { MdOutlineRouter } from "react-icons/md";
 import Sidebar from './sidebar';
 
 function ShoppingCart() {
-
-  const [showOffers, setShowOffers] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);  const [showOffers, setShowOffers] = useState(false);
   const [showAll, setShowAll] = useState(false);
   const [showInternet, setShowInternet] = useState(false);
   const [showPhone, setShowPhone] = useState(false);
@@ -128,49 +126,49 @@ function ShoppingCart() {
           
         </section>
 
-        <section className='space-y-4 sm:flex sm:space-x-4 sm:py-4'>
-     
-      <section className='p-2 text-lg font-semibold text-center bg-white rounded-lg shadow-lg text-primary sm:w-2/4'>
-      Wifi 6 Extender
-        <hr ></hr>
-        <div className='p-2 my-2 bg-white rounded-md '>
-          <div className='flex flex-col'>
-           <span className='p-1 text-gray-400 text-tiny text-start'>40mb/s.  Lorem ipsum sit amet, consectetur adipiscing elit ut aliqua, et purus amet.</span> 
-            <div className='flex justify-between'>
-              <div className=''>
-              <div className='flex'>
-          <h1  class=" text-start font-bold text-transparent text-[30px] bg-clip-text bg-gradient-to-r from-[#333366] to-[#00E5D9]">
-           $9,99
-            </h1>
-            <div className='p-1 pt-5 text-gray-400 text-tiny'> per month + tax</div>
-          </div>
-          <div className='p-1 my-auto underline text-primary text-tiny text-start' >
-          More information
-          </div>
+          <section className='space-y-4 sm:flex sm:space-x-4 sm:py-4'>
+
+            <section className='p-2 text-lg font-semibold text-center bg-white rounded-lg shadow-lg text-primary sm:w-2/4'>
+              Wifi 6 Extender
+              <hr ></hr>
+              <div className='p-2 my-2 bg-white rounded-md '>
+                <div className='flex flex-col'>
+                  <span className='p-1 text-gray-400 text-tiny text-start'>40mb/s.  Lorem ipsum sit amet, consectetur adipiscing elit ut aliqua, et purus amet.</span>
+                  <div className='flex justify-between'>
+                    <div className=''>
+                      <div className='flex'>
+                        <h1 class=" text-start font-bold text-transparent text-[30px] bg-clip-text bg-gradient-to-r from-[#333366] to-[#00E5D9]">
+                          $9,99
+                        </h1>
+                        <div className='p-1 pt-5 text-gray-400 text-tiny'> per month + tax</div>
+                      </div>
+                      <div className='p-1 my-auto underline text-primary text-tiny text-start' >
+                        More information
+                      </div>
+                    </div>
+
+                    <MdOutlineRouter className='w-20 h-20' />
+                  </div>
+                  <button className='w-full py-2 mt-3 border-2 rounded-md text-primary text-tiny border-primary'> + Add to Cart </button>
+                </div>
               </div>
-              
-              <MdOutlineRouter className='w-20 h-20' />
-            </div>
-           <button className='w-full py-2 mt-3 border-2 rounded-md text-primary text-tiny border-primary'> + Add to Cart </button>
-          </div>
+
+            </section>
+
+          </section>
+
+
+
+          <footer className="flex flex-col pt-6 my-3 gap-y-4 ">
+            <button className='w-full px-3 py-2 text-white rounded-md bg-primary'> Check Service </button>
+            <span className='px-3 py-2 mx-auto underline text-primary'> Go Back </span>
+          </footer>
+
+
         </div>
-
-      </section>
-
-     </section>
-
-
-    
-    <footer className="flex flex-col pt-6 my-3 gap-y-4 ">
-        <button className='w-full px-3 py-2 text-white rounded-md bg-primary'> Check Service </button>
-        <span className='px-3 py-2 mx-auto underline text-primary'> Go Back </span>
-    </footer>
+      </div>
 
   
-      </div>
-    </div>
-
-
   </>
   )
 }
